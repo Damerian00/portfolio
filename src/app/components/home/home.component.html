@@ -1,0 +1,89 @@
+<header>
+    <nav>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Work</a></li>
+            <li><a href="">Portfolio</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <div id="intro" class="bio">
+        <img src="#" alt="profile picture">
+        <p>Greetings. I'm <span class="bold">Patrick Price</span></p>
+        <p>I'm a FullStack Developer with experience with both front end and back end development.</p>
+        <button>Click to Learn more</button>
+    </div>
+    <div id="work">
+        <h3>Here's a list of some of my skill sets.</h3>
+        <ul class="skills">
+            <li>
+                <fa-icon [icon]="faJs"></fa-icon>
+                <p>Javascript</p>
+                <p>Knowledgable with some of it's higher order functions.</p>
+            </li>
+            <li>
+                <fa-icon [icon]="faHtml"></fa-icon>
+                <p>HTML5</p>
+                <p>Familiar with Elements, syntax, and SEO proceedures.</p>
+            </li>
+            <li>
+                <fa-icon [icon]="faCss"></fa-icon>
+                <p>CSS/SCSS</p>
+                <p>Knowledgeable in using selectors, animations, and pseudo classes.</p>
+            </li>
+            <li>
+                <fa-icon [icon]="faBootstrap"></fa-icon>
+                <p>Bootstrap</p>
+                <p>Knowledgeable with the framework and how it's selectors work.</p>
+            </li>
+            <li>
+                <fa-icon [icon]="faAngular"></fa-icon>
+                <p>Angular</p>
+                <p>Knowledgeable with this framework and have built several sites using this framework.</p>
+            </li>
+            <li>
+                <fa-icon [icon]="faNode"></fa-icon>
+                <p>Nodejs</p>
+                <p>Familiar with packages, dependencies, and have built several back-ends with this framework.</p>
+            </li>
+            <li>
+                <fa-icon [icon]="faReact"></fa-icon>
+                <p>React</p>
+                <p>Familiar with this framework and have built a few sites with it.</p>
+            </li>
+            <li>
+                <fa-icon [icon]="faPs"></fa-icon>
+                <p>Photo Manipulation</p>
+                <p>Knowledgeable in masks,layers,color manipulation, and other features within Adobe Photoshop.</p>
+            </li>
+            <li>
+                <fa-icon [icon]="faVideo"></fa-icon>
+                <p>Video Editing</p>
+                <p>knowledgeable in keys, masking, nesting, and other features with Adobe Premiere.</p>
+            </li>
+        </ul>
+        <div class="work_footer">
+            <p>need to add something here</p>
+            <button>Projects I've made</button>
+        </div>
+    </div>
+    <div id="portfolio" class="projects">
+        <h4>Project Carousel Below</h4>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum in libero dolore dolorem recusandae iusto repellendus temporibus at doloremque reiciendis illo accusantium ratione, deserunt cupiditate neque optio a qui necessitatibus.
+        </p>
+        <carousel [slides]="slides"></carousel>
+    </div>
+</main>
+<footer id="contact" class="contact_area">
+    <h2>Connect with me</h2>
+        <ul class="links">
+            <li>
+               <a><fa-icon [icon]="faLinkedin" class="linkedIn"></fa-icon></a> 
+            </li>
+            <li>
+                <a><fa-icon [icon]="faGithub" class="gitHub"></fa-icon></a>
+            </li>
+        </ul>
+</footer>

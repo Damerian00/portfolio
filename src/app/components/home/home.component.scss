@@ -1,0 +1,117 @@
+* {
+    text-decoration: none;
+    list-style: none;
+    color:black;
+    margin:0;
+    padding:0;
+    letter-spacing: 0;
+}
+nav {
+    width:100vw;
+ul  {
+display: flex;
+justify-content: center;
+background-color:rgb(43, 43, 43);
+}
+li {
+    margin:1rem;
+}
+a {
+    color:white;
+}
+
+}
+.bold{
+    font-weight: 800;
+    
+}
+.bio, .skills li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom:1rem;
+    border: 1px inset rgb(216, 215, 215);
+    padding:2rem;
+    background-color: rgb(241, 238, 238);
+}
+.bio p {
+    text-align: center;
+    margin: .25rem;
+}
+.bio > p:nth-child(2){
+    font-size: 2rem;
+    margin:1rem;
+    padding:.25rem;
+    
+}
+button{
+    padding:1rem;
+    border-radius:7px;
+    border: .10em inset black;
+    margin:1rem .5rem;
+    background-color: rgb(4, 144, 199);
+    color:rgb(243, 243, 243);
+    font-weight: 600;
+    text-shadow: -1px -1px 0.5px rgb(0 0 0 / 50%);
+    box-shadow: inset 0px 0px 0px 1px rgb(0 0 0 / 50%), inset 0px 2px 1px 0px rgb(255 255 255 / 75%);
+}
+#work{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.skills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.skills li {
+    margin: 1rem;
+    width: 70vw;
+    height: 10em;
+}
+.work_footer{
+    margin:1rem;
+    text-align: center;
+}
+.projects{
+    padding:1rem;
+    box-shadow: inset 0px 1px 0px 0px rgb(0 0 0 / 50%), inset 0px 2px 3px 0px rgb(255 255 255 / 75%);
+    h4{
+        text-align:center;
+        margin:.5rem;
+    }
+    p{
+        color:rgb(146, 146, 146);
+    }
+    margin-bottom:3rem;
+}
+.contact_area, footer{
+    background-color: rgb(48, 48, 48);
+    color: rgb(153, 153, 153);
+    text-shadow: -1px -1px 0px rgb(24, 24, 24);
+    h2{
+        color:rgb(255, 255, 255);
+        text-align:center;
+    }
+}
+.links{
+    display:flex;
+    justify-content: space-around;
+    li{
+        margin:.5rem;
+    }
+}
+.linkedIn{
+    color: rgb(4, 144, 199);
+    font-size:2rem;
+}
+.gitHub{
+    color: rgb(255, 255, 255);
+    font-size:2rem;
+}
+
+@media (min-width:600px){
+
+}
