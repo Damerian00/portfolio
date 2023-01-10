@@ -23,37 +23,48 @@ export class HomeComponent implements OnInit {
 
   slides: Array<any> = [
     {
-     
+      id: "slide1",
       title: "Miro",
       alt: "Miro Apartments",
       desc: "Recreation of Miro Apartments site in 2016",
-      url: '../../../assets/img/miro_ss.png',
+      url: '../../../assets/img/miro_ss.png'
     },
     {
-     
+      id: "slide2",
       title: "Pero Site",
       alt: "Pero Site Project",
       desc: "Recreation of a site with a twist",
-      url: '../../../assets/img/peropen.jpg',
+      url: '../../../assets/img/peropen.jpg'
     },
     {
-     
+      id: "slide3",
       title: "Elias",
       alt: "Elias Site",
       desc: "Creation of a site in 2016",
-      url: '../../../assets/img/elias_ss.png',
+      url: '../../../assets/img/elias_ss.png'
     },
     {
-     
+      id: "slide4",
       title: "Kudler Fine Foods",
       alt: "KFF Project",
       desc: "Recreaton of KFF site",
-      url: '../../../assets/img/KFF_ss.png',
+      url: '../../../assets/img/KFF_ss.png'
+    },
+    {
+      id: "slide5",
+      title: 'Match',
+      alt: "Match",
+      desc: "Recreation of a site",
+      url: '../../../assets/img/match_ss.png'
     }
   ]  
   constructor() { }
 
   ngOnInit(): void {
+  }
+  
+  scrollTo(element: any): void {
+    (document.getElementById(element) as HTMLElement).scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
   }
 
 }

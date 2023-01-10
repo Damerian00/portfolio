@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 
 interface slideInterface  {
+    id: string,
     title: string,
     alt: string,
     desc: string
@@ -19,7 +20,11 @@ export class CarouselComponent implements OnInit {
   ngOnInit(): void {
   }
 
-
+slide1: string = '';
+slide2: string = '';
+slide3: string = '';
+slide4: string = '';
+slide5: string = '';
 indicators: boolean = true; 
 currentIndex:number = 0;
 
@@ -40,5 +45,6 @@ gottoPrevious(): void {
 goToSlide(slideNum: number): void {
  this. currentIndex = slideNum;
 }
+
 
 }

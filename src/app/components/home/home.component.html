@@ -1,73 +1,76 @@
 <header>
     <nav>
         <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">Work</a></li>
-            <li><a href="">Portfolio</a></li>
-            <li><a href="">Contact</a></li>
+            <li><a (click)="scrollTo('intro')">Top</a></li>
+            <li><a (click)="scrollTo('work')">Work</a></li>
+            <li><a (click)="scrollTo('portfolio')">Portfolio</a></li>
         </ul>
     </nav>
 </header>
 <main>
     <div id="intro" class="bio">
-        <img src="#" alt="profile picture">
+        <span class="prof_container">
+            <img src="../../../assets/img/me_pic.jpg" alt="profile picture" class="profilePic">
+        </span>
         <p>Greetings. I'm <span class="bold">Patrick Price</span></p>
         <p>I'm a FullStack Developer with experience with both front end and back end development.</p>
-        <button>Click to Learn more</button>
+        <button (click)="scrollTo('work')">Click to Learn more</button>
     </div>
     <div id="work">
         <h3>Here's a list of some of my skill sets.</h3>
         <ul class="skills">
-            <li>
-                <fa-icon [icon]="faJs"></fa-icon>
-                <p>Javascript</p>
-                <p>Knowledgable with some of it's higher order functions.</p>
-            </li>
-            <li>
-                <fa-icon [icon]="faHtml"></fa-icon>
-                <p>HTML5</p>
-                <p>Familiar with Elements, syntax, and SEO proceedures.</p>
-            </li>
-            <li>
-                <fa-icon [icon]="faCss"></fa-icon>
-                <p>CSS/SCSS</p>
-                <p>Knowledgeable in using selectors, animations, and pseudo classes.</p>
-            </li>
-            <li>
-                <fa-icon [icon]="faBootstrap"></fa-icon>
-                <p>Bootstrap</p>
-                <p>Knowledgeable with the framework and how it's selectors work.</p>
-            </li>
-            <li>
-                <fa-icon [icon]="faAngular"></fa-icon>
-                <p>Angular</p>
-                <p>Knowledgeable with this framework and have built several sites using this framework.</p>
-            </li>
-            <li>
-                <fa-icon [icon]="faNode"></fa-icon>
-                <p>Nodejs</p>
-                <p>Familiar with packages, dependencies, and have built several back-ends with this framework.</p>
-            </li>
-            <li>
-                <fa-icon [icon]="faReact"></fa-icon>
-                <p>React</p>
-                <p>Familiar with this framework and have built a few sites with it.</p>
-            </li>
-            <li>
-                <fa-icon [icon]="faPs"></fa-icon>
-                <p>Photo Manipulation</p>
-                <p>Knowledgeable in masks,layers,color manipulation, and other features within Adobe Photoshop.</p>
-            </li>
-            <li>
-                <fa-icon [icon]="faVideo"></fa-icon>
-                <p>Video Editing</p>
-                <p>knowledgeable in keys, masking, nesting, and other features with Adobe Premiere.</p>
-            </li>
+            <div class="skills_container">
+                <li>
+                    <h3>Javascript</h3>
+                    <fa-icon [icon]="faJs" class="js_icon"></fa-icon>
+                    <p>Knowledgable with some of it's higher order functions.</p>
+                </li>
+                <li>
+                    <h3>HTML5</h3>
+                    <fa-icon [icon]="faHtml" class="html_icon"></fa-icon>
+                    <p>Familiar with Elements, syntax, and SEO proceedures.</p>
+                </li>
+                <li>
+                    <h3>CSS/SCSS</h3>
+                    <fa-icon [icon]="faCss" class="css_icon"></fa-icon>
+                    <p>Knowledgeable in using selectors, animations, and pseudo classes.</p>
+                </li>
+                <li>
+                    <h3>Bootstrap</h3>
+                    <fa-icon [icon]="faBootstrap" class="bs_icon"></fa-icon>
+                    <p>Knowledgeable with the framework and how it's selectors work.</p>
+                </li>
+                <li>
+                    <h3>Angular</h3>
+                    <fa-icon [icon]="faAngular" class="ang_icon"></fa-icon>
+                    <p>Knowledgeable with this framework and have built several sites using this framework.</p>
+                </li>
+                <li>
+                    <h3>Nodejs</h3>
+                    <fa-icon [icon]="faNode" class="node_icon"></fa-icon>
+                    <p>Familiar with packages, dependencies, and have built several back-ends with this framework.</p>
+                </li>
+                <li>
+                    <h3>React</h3>
+                    <fa-icon [icon]="faReact" class="react_icon"></fa-icon>
+                    <p>Familiar with this framework and have built a few sites with it.</p>
+                </li>
+                <li>
+                    <h3>Photo Manipulation</h3>
+                    <fa-icon [icon]="faPs" class="ps_icon"></fa-icon>
+                    <p>Knowledgeable in masks,layers,color manipulation, and other features within Adobe Photoshop.</p>
+                </li>
+                <li>
+                    <h3>Video Editing</h3>
+                    <fa-icon [icon]="faVideo" class="pre_icon"></fa-icon>
+                    <p>Knowledgeable in keys, masking, nesting, and other features with Adobe Premiere.</p>
+                </li>
+            </div> 
         </ul>
-        <div class="work_footer">
-            <p>need to add something here</p>
-            <button>Projects I've made</button>
-        </div>
+       
+           
+            <button (click)="scrollTo('portfolio')">Projects I've made</button>
+        
     </div>
     <div id="portfolio" class="projects">
         <h4>Project Carousel Below</h4>
@@ -76,14 +79,14 @@
         <carousel [slides]="slides"></carousel>
     </div>
 </main>
-<footer id="contact" class="contact_area">
+<footer class="contact_area">
     <h2>Connect with me</h2>
         <ul class="links">
             <li>
-               <a><fa-icon [icon]="faLinkedin" class="linkedIn"></fa-icon></a> 
+               <a href="https://www.linkedin.com/in/patrick-p-35600135/" target="_blank"><fa-icon [icon]="faLinkedin" class="linkedIn" ></fa-icon></a> 
             </li>
             <li>
-                <a><fa-icon [icon]="faGithub" class="gitHub"></fa-icon></a>
+                <a href="https://github.com/Damerian00" target="_blank"><fa-icon [icon]="faGithub" class="gitHub" ></fa-icon></a>
             </li>
         </ul>
 </footer>
