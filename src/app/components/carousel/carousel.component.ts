@@ -5,7 +5,8 @@ interface slideInterface  {
     title: string,
     alt: string,
     desc: string
-    url: string
+    url: string,
+    pos: Array<any>
 }
 
 @Component({
@@ -14,17 +15,13 @@ interface slideInterface  {
   styleUrls: ['./carousel.component.scss']
 })
 export class CarouselComponent implements OnInit {
-  @Input() slides: slideInterface[]  = [];
+  @Input() slides: Array <any>  = [];
   constructor() { }
 
   ngOnInit(): void {
   }
 
-slide1: string = '';
-slide2: string = '';
-slide3: string = '';
-slide4: string = '';
-slide5: string = '';
+slidePos: Array<any> = [0,1,2,3,4,5]
 indicators: boolean = true; 
 currentIndex:number = 0;
 
@@ -43,8 +40,16 @@ gottoPrevious(): void {
   const newIndex = isFirstSlide ? this.slides.length - 1 : this.currentIndex - 1;
 }
 goToSlide(slideNum: number): void {
- this. currentIndex = slideNum;
-}
 
+ this.currentIndex = slideNum;
+}
+rotateSlides(slide : string): void {
+  const index = this.slides.findIndex((el:any)=> el.id === slide);
+  let tempPos = this.slides[this.currentIndex].pos;
+  this.slides[this.currentIndex].pos = this.slides[index].pos;
+  this.slides[index].pos = tempPos;
+  this.currentIndex = index;
+ 
+}
 
 }

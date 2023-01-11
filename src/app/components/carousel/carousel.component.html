@@ -1,7 +1,7 @@
 <div id="project_carousel" class="carousel_container">
     <ul class="carousel">
-        <li *ngFor="let slide of slides; let slideIndex = index" class="slide" [ngClass]="{'image-active' : currentIndex === slideIndex}" id="{{slide.id}}">
-            <img (click)="goToSlide(slideIndex)" [src]="slide.url" [alt]="slide.alt" class="fade" >
+        <li *ngFor="let slide of slides; let slideIndex = index" class="slide" [ngClass]="{'image-active' : currentIndex === slideIndex, 'slide2' : slide.pos[1] === 1, 'slide3' : slide.pos[2] === 1, 'slide4' : slide.pos[3] === 1, 'slide5' : slide.pos[4] === 1 }" id="{{slide.id}}">
+            <img (click)="rotateSlides(slide.id)" [src]="slide.url" [alt]="slide.alt" class="fade" >
             <div class="slide_info">
                 <h4 class="slide_title">{{slide.title}}</h4>
                 <p class="slide_desc">{{slide.desc}}</p>

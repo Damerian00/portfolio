@@ -76,7 +76,7 @@
             position: relative;
             width: 800px;
             height: 300px;
-            margin-left:2em;
+            margin-left:7%;
         }
        li{
         display: block;
@@ -84,10 +84,23 @@
         width:10em;
        }
        .slide_info{display: none;}
-        .image-active{
-            height: auto;
-          
+       .image-active{
+           height: auto;
+         
+       }
+       .image-active{
+        display: inline;
+        position: absolute;
+        left: 110px;
+        width: 650px;
+        height: 350px;
+        z-index: 5;
+        img{
+            width: 650px;
+            height: 325px;
+            transition: transform 1s;
         }
+    }
         .image-active > .slide_info{
             position: relative;
             bottom:-1rem;
@@ -100,21 +113,10 @@
             }
         }
     }
-    #slide1{
+
+    .slide2{
         display: inline;
-        position: absolute;
-        left: 110px;
-        width: 650px;
-        height: 350px;
-        z-index: 5;
-        img{
-            width: 650px;
-            height: 325px;
-        }
-    }
-    #slide2{
-        display: inline;
-        left: 347.5px;
+        left: 381.5px;
         top: 27.5px;
         position: absolute;
         opacity: 0.8;
@@ -122,11 +124,12 @@
         img{
             width: 455px;
             height: 245px;
+            transition: transform 1s;
         }
     }
-    #slide3{
+    .slide3{
         display: inline;
-        left: 520.75px;
+        left: 570.75px;
         top: 64.25px;
         visibility: visible;
         position: absolute;
@@ -134,12 +137,12 @@
         opacity: 0.64;
        
         img{
-            width:5rem;
             width: 318.5px;
             height: 171.5px;
+            transition: transform 1s;
         }
     }   
-    #slide4{
+    .slide4{
         display: inline;
         left: -59.25px;
         top: 64.25px;
@@ -151,9 +154,10 @@
         img{
             width: 318.5px;
             height: 171.5px;
+            transition: transform 1s;
         }
     }
-    #slide5{
+    .slide5{
         display: inline;
         left: -2.5px;
         top: 27.5px;
@@ -165,6 +169,11 @@
         img{
             width: 455px;
             height: 245px;
+            transition: transform 1s;
         }
     }
+    .slide img{
+        border:2px solid black;
+       }
+    
 }

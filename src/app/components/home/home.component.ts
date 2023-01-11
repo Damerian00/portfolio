@@ -27,35 +27,40 @@ export class HomeComponent implements OnInit {
       title: "Miro",
       alt: "Miro Apartments",
       desc: "Recreation of Miro Apartments site in 2016",
-      url: '../../../assets/img/miro_ss.png'
+      url: '../../../assets/img/miro_ss.png',
+      pos: [1,0,0,0,0]
     },
     {
       id: "slide2",
       title: "Pero Site",
       alt: "Pero Site Project",
       desc: "Recreation of a site with a twist",
-      url: '../../../assets/img/peropen.jpg'
+      url: '../../../assets/img/peropen.jpg',
+      pos: [0,1,0,0,0]
     },
     {
       id: "slide3",
       title: "Elias",
       alt: "Elias Site",
       desc: "Creation of a site in 2016",
-      url: '../../../assets/img/elias_ss.png'
+      url: '../../../assets/img/elias_ss.png',
+      pos: [0,0,1,0,0]
     },
     {
       id: "slide4",
       title: "Kudler Fine Foods",
       alt: "KFF Project",
       desc: "Recreaton of KFF site",
-      url: '../../../assets/img/KFF_ss.png'
+      url: '../../../assets/img/KFF_ss.png',
+      pos: [0,0,0,1,0]
     },
     {
       id: "slide5",
       title: 'Match',
       alt: "Match",
       desc: "Recreation of a site",
-      url: '../../../assets/img/match_ss.png'
+      url: '../../../assets/img/match_ss.png',
+      pos: [0,0,0,0,1]
     }
   ]  
   constructor() { }
