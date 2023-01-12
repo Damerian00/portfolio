@@ -27,7 +27,7 @@ export class HomeComponent implements OnInit {
       title: "Star Wars Character Generator",
       alt: "SW Chargen",
       desc: "Generates and maintins a character based on the rules of the game.",
-      url: '../../../assets/img/swsaga_ss.jpg',
+      url: '../../../assets/img/swsagaSS.jpg',
       pos: [1,0,0,0,0],
       link: 'https://sw-saga-character-gen.web.app/'
     },
@@ -36,7 +36,7 @@ export class HomeComponent implements OnInit {
       title: "Battle Masters",
       alt: "Battle Masters",
       desc: "Turn based game created mostly with JS",
-      url: '../../../assets/img/bm_ss.jpg',
+      url: '../../../assets/img/bmSS.jpg',
       pos: [0,1,0,0,0],
       link: 'https://damerian00.github.io/BattleMasters/'
     },
@@ -45,7 +45,7 @@ export class HomeComponent implements OnInit {
       title: "Miro",
       alt: "Miro Apartments",
       desc: "Recreation of Miro Apartments site from 2016",
-      url: '../../../assets/img/miro_ss.png',
+      url: '../../../assets/img/miroSS.png',
       pos: [0,0,1,0,0],
       link: 'https://damerian00.github.io/miroMocksite/'
     },
@@ -54,7 +54,7 @@ export class HomeComponent implements OnInit {
       title: "Quiz Bowl",
       alt: "Quiz Bowl",
       desc: "Trivia game created with js and html",
-      url: '../../../assets/img/quiz_ss.jpg',
+      url: '../../../assets/img/quizSS.jpg',
       pos: [0,0,0,1,0],
       link: 'https://damerian00.github.io/QuizBowl/'
     },
@@ -63,7 +63,7 @@ export class HomeComponent implements OnInit {
       title: 'Password Generator',
       alt: "Pass Gen",
       desc: "Creates a random Password",
-      url: '../../../assets/img/passGen_ss.jpg',
+      url: '../../../assets/img/passGenSS.jpg',
       pos: [0,0,0,0,1],
       link: 'https://damerian00.github.io/passwordGen/'
     }
