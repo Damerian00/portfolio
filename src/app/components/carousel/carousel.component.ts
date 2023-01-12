@@ -6,7 +6,8 @@ interface slideInterface  {
     alt: string,
     desc: string
     url: string,
-    pos: Array<any>
+    pos: Array<any>,
+    link: string
 }
 
 @Component({

@@ -1,3 +1,6 @@
+*{
+    text-decoration: none;
+}
 .carousel_container{
     position: relative;
     margin: 2rem auto;
@@ -29,7 +32,7 @@
         position: absolute;
         right:0;
         left:0;
-        bottom:-6rem;
+        bottom:-7rem;
         display: flex;
         justify-content: center;
         padding: 0;
@@ -48,9 +51,26 @@
         .active, .dot:hover{
             opacity: 1;    
         }
+    
         
     }
-
+    .slide_info a{
+        margin-top:.5em;
+        padding:.25rem;
+        border-radius:7px;
+        background-color: rgb(4, 144, 199);
+        color:rgb(243, 243, 243);
+        font-weight: 600;
+        text-shadow: -1px -1px 0.5px rgb(0 0 0 / 50%);
+        box-shadow: inset 0px 0px 0px 1px rgb(0 0 0 / 50%), inset 0px 2px 1px 0px rgb(255 255 255 / 75%);
+        font-family: 'Roboto Slab', serif;
+        position: relative;
+        bottom: -10px;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}
     @keyframes fade {
         from {
             opacity: 0.4;
@@ -59,7 +79,7 @@
             opacity: 1;
         }
     }
-}
+
 
 @media (min-width:737px){
     .carousel_container{
@@ -68,15 +88,20 @@
             height: 400px;
         }
     }
+    .dot_container{
+        left:-2rem;
+    }
 }
 
 @media (min-width:1020px){
     .carousel_container{
+        background-color: rgba(0,0,0,0.8);
+        width:100%;
         .carousel{
             position: relative;
             width: 800px;
             height: 300px;
-            margin-left:7%;
+            margin: 2em auto;
         }
        li{
         display: block;
@@ -144,7 +169,7 @@
     }   
     .slide4{
         display: inline;
-        left: -59.25px;
+        left: -56.25px;
         top: 64.25px;
         visibility: visible;
         position: absolute;
